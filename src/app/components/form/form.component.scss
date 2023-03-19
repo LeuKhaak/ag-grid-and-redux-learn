@@ -1,0 +1,12 @@
+.modalWrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(231, 226, 226, 0.5);
+  .modalForm {
+    width: 700px;
+    height: auto;
+    background-color: antiquewhite;
+  }
+}

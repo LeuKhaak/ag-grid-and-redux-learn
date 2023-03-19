@@ -1,0 +1,15 @@
+@use "node_modules/ag-grid-community/styles" as ag;
+
+@include ag.grid-styles((
+  theme: alpine,
+  --ag-alpine-active-color: #59d054,
+  --ag-header-foreground-color: deeppink
+));
+.ag-theme-alpine {
+  // Nest rules in .ag-theme-alpine so that the selectors include the theme name.
+  // Without the theme name, your styles will not override the theme's built-in
+  // styles due to CSS selector specificity rules.
+  .ag-header-cell-label {
+    font-style: italic;
+  }
+}

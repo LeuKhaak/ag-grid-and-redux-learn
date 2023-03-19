@@ -1,0 +1,25 @@
+<!--<div class="modalWrapper">-->
+<!--  <div class="modalForm">-->
+<!--    <div>{{data}}</div>-->
+<!--    <button (click)="close()">Close</button>-->
+<!--  </div>-->
+<!--</div>-->
+
+<form [formGroup]="car" novalidate (ngSubmit)="save($event)">
+  <div>
+    <label>Make</label>
+    <input type="text" formControlName="make" />
+  </div>
+
+  <div>
+    <label>Model</label>
+    <input type="text" formControlName="model" />
+  </div>
+
+  <div>
+    <label>Price</label>
+    <input type="number" formControlName="price" />
+  </div>
+
+  <button>READY</button>
+</form>
